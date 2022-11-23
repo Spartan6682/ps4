@@ -248,7 +248,7 @@ class CiphertextMessage(Message):
                     temp_value += 1
             if temp_value >= word_count:
                 decrypted_text = temp_message
-                peak_shift_value = int
+                peak_shift_value = 26 - int
                 word_count = temp_value
 
         return (peak_shift_value, decrypted_text)
