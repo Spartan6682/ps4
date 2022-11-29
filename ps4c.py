@@ -79,7 +79,7 @@ class SubMessage(object):
         
         Returns: self.message_text
         '''
-        return self.message_text
+        return self.message_text[:]
 
     def get_valid_words(self):
         '''
@@ -88,7 +88,7 @@ class SubMessage(object):
         
         Returns: a COPY of self.valid_words
         '''
-        return self.valid_words
+        return self.valid_words[:]
                 
     def build_transpose_dict(self, vowels_permutation):
         '''
